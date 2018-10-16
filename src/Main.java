@@ -4,6 +4,8 @@ public class Main
 	{
 		PerformanceTest start = new PerformanceTest(); 
 		start.testArrayListe();
+		System.out.println();
+		start.testLinkedListe();
 		
 
 //		LinkedListe<Integer> liste = new LinkedListe<Integer>(); 
