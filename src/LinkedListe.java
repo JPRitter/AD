@@ -23,7 +23,7 @@ public class LinkedListe<E> implements ListenInter<E>
 	{
 		// Diese Implementierung verwendet zwei Waechter-Knoten,
 		// einen fuer den Listenanfang, einen fuer das Ende.
-		// Sie markieren technisch die Grenzen der Liste und enthalten keine Titel.
+		// Sie markieren technisch die Grenzen der Liste und enthalten keine Elemente.
 		// Sie erleichtern das Einfuegen und Entfernen von Titeln,
 		// weil viele Sonderfaelle entfallen.
 		_listenkopf = new DoppelKnoten<E>();
@@ -34,15 +34,15 @@ public class LinkedListe<E> implements ListenInter<E>
 	}
 
 	/**
-	 * Fuege einen Titel an der Position <code>position</code> in die Titelliste
+	 * Fuege ein Element an der Position position in die LinkedListe
 	 * ein. Alle folgenden Eintraege werden um eine Position verschoben. Wenn
-	 * <code>position</code> gleich der Laenge der Titelliste ist, dann fuege den
-	 * <code>titel</code> am Ende an.
+	 * position gleich der Laenge der LinkedListe ist, dann fuege das
+	 * Element am Ende an.
 	 * 
-	 * @param titel
-	 *            Der einzufuegende Titel (darf nicht null sein).
+	 * @param element
+	 *            Das einzufuegende Element (darf nicht null sein).
 	 * @param position
-	 *            Die Position, an welcher der Titel eingefuegt werden soll.
+	 *            Die Position, an welcher das Element eingefuegt werden soll.
 	 */
 	@Override
 	public void fuegeEin(E element, int position)
@@ -95,11 +95,11 @@ public class LinkedListe<E> implements ListenInter<E>
 	}
 
 	/**
-	 * Entferne den Titel an der angegebenen Position. Alle folgenden Eintraege
+	 * Entferne das Element an der angegebenen Position. Alle folgenden Eintraege
 	 * werden um eine Position verschoben.
 	 * 
 	 * @param position
-	 *            Die Position des Titels, der entfernt werden soll.
+	 *            Die Position des Elmentes, das entfernt werden soll.
 	 */
 	@Override
 	public void entferne(int position)
@@ -116,12 +116,12 @@ public class LinkedListe<E> implements ListenInter<E>
 	}
 
 	/**
-	 * Pruefe, ob ein Titel in der Liste enthalten ist.
+	 * Pruefe, ob ein Element in der Liste enthalten ist.
 	 * 
-	 * @param titel
-	 *            Der Titel, welcher in der Liste gesucht werden soll.
-	 * @return <code>true</code> wenn der Titel in der Liste ist, ansonsten
-	 *         <code>false</code>.
+	 * @param element
+	 *            Das Element, welches in der Liste gesucht werden soll.
+	 * @return true wenn das Element in der Liste ist, ansonsten
+	 *         false.
 	 */
 	@Override
 	public boolean enthaelt(E element)
@@ -140,11 +140,11 @@ public class LinkedListe<E> implements ListenInter<E>
 	}
 
 	/**
-	 * Gib den Titel an der angegebenen Position zurueck.
+	 * Gibt das Element an der angegebenen Position zurueck.
 	 * 
 	 * @param position
-	 *            Die Position des Titels, der zurueckgeben werden soll.
-	 * @return Der Titel an der Position <code>position</code>.
+	 *            Die Position des Elements, das zurueckgeben werden soll.
+	 * @return Das Element an der Position position.
 	 */
 	@Override
 	public E gibElement(int position)
@@ -217,7 +217,7 @@ public class LinkedListe<E> implements ListenInter<E>
 	}
 
 	/**
-	 * Wirft eine IllegalArgumentException, falls die uebergebene Titel-Referenz
+	 * Wirft eine IllegalArgumentException, falls die uebergebene Element-Referenz
 	 * null ist.
 	 */
 	private void darfNichtNullSein(E elemente)

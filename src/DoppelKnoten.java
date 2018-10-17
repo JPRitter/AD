@@ -14,7 +14,7 @@ public class DoppelKnoten<E>
 	// Der nachfolgende Knoten
 	private DoppelKnoten<E> _nachfolger;
 
-	// Das Element des Knotens, ein Titel
+	// Das Element des Knotens, ein Element
 	private E _element;
 
 	/**
@@ -87,7 +87,7 @@ public class DoppelKnoten<E>
 	/**
 	 * Gib das (Daten-)Element dieses Knotens.
 	 * 
-	 * @return den gespeicherten Element dieses Knotens.
+	 * @return das gespeicherte Element dieses Knotens.
 	 */
 	public E gibElement()
 	{
@@ -107,7 +107,7 @@ public class DoppelKnoten<E>
 
 	/**
 	 * Diese Methode faengt einen typischen Fehler ab, der in SE hin und wieder
-	 * gemacht wird. Der Fehler tritt auf, wenn in der Klasse LinkedTitelListe
+	 * gemacht wird. Der Fehler tritt auf, wenn in der Klasse LinkedlListe
 	 * versehentlich ein Kettenglied mit einem Element verglichen wird.
 	 */
 	public boolean equal(E element)

@@ -24,14 +24,15 @@ public class ArrayListe<E> implements ListenInter<E>
 	}
 
 	/**
-     * Fuege ein Element an der Position in die Titelliste
-     * ein. Alle folgenden Eintraege werden um eine Position verschoben.
-     * Wenn die position gleich der Laenge der Titelliste ist, dann
-     * fuege das Element am Ende an.
-     * 
-     * @param titel Der einzufuegende Titel (darf nicht null sein).
-     * @param position Die Position, an welcher der Titel eingefuegt werden soll.
-     */
+	 * Fuege ein Element an der Position in die Liste ein. Alle folgenden Eintraege
+	 * werden um eine Position verschoben. Wenn die position gleich der Laenge der
+	 * Liste ist, dann fuege das Element am Ende an.
+	 * 
+	 * @param element
+	 *            Das einzufuegende Element (darf nicht null sein).
+	 * @param position
+	 *            Die Position, an welcher das Element eingefuegt werden soll.
+	 */
 	@Override
 	public void fuegeEin(E element, int position)
 	{
@@ -73,12 +74,13 @@ public class ArrayListe<E> implements ListenInter<E>
 		System.arraycopy(_elementArray, position, _elementArray, position + 1, _anzahlElemente - position);
 	}
 
-	   /**
-     * Entferne das Element an der angegebenen Position. Alle folgenden Eintraege
-     * werden um eine Position verschoben.
-     * 
-     * @param position Die Position des Elements, das entfernt werden soll.
-     */
+	/**
+	 * Entferne das Element an der angegebenen Position. Alle folgenden Eintraege
+	 * werden um eine Position verschoben.
+	 * 
+	 * @param position
+	 *            Die Position des Elements, das entfernt werden soll.
+	 */
 	@Override
 	public void entferne(int position)
 	{
@@ -104,13 +106,13 @@ public class ArrayListe<E> implements ListenInter<E>
 		System.arraycopy(_elementArray, position, _elementArray, position - 1, _anzahlElemente - position);
 	}
 
-
-    /**
-     * Pruefe, ob ein Element in der Liste enthalten ist.
-     * 
-     * @param element das Element, welches in der Liste gesucht werden soll.
-     * @return true wenn das Element in der Liste ist, ansonsten false.
-     */
+	/**
+	 * Pruefe, ob ein Element in der Liste enthalten ist.
+	 * 
+	 * @param element
+	 *            das Element, welches in der Liste gesucht werden soll.
+	 * @return true wenn das Element in der Liste ist, ansonsten false.
+	 */
 	@Override
 	public boolean enthaelt(E element)
 	{
@@ -131,12 +133,13 @@ public class ArrayListe<E> implements ListenInter<E>
 		// _anzahlTitel).contains(titel);
 	}
 
-	   /**
-     * Gibt das Element an der angegebenen Position zurueck.
-     * 
-     * @param position Die Position des Elements, das zurueckgeben werden soll.
-     * @return Das Element an der Position.
-     */
+	/**
+	 * Gibt das Element an der angegebenen Position zurueck.
+	 * 
+	 * @param position
+	 *            Die Position des Elements, das zurueckgeben werden soll.
+	 * @return Das Element an der Position.
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public E gibElement(int position)
@@ -216,7 +219,7 @@ public class ArrayListe<E> implements ListenInter<E>
 	}
 
 	/**
-	 * Wirft eine IllegalArgumentException, falls die uebergebene Titel-Referenz
+	 * Wirft eine IllegalArgumentException, falls die uebergebene Element-Referenz
 	 * null ist.
 	 */
 	private void darfNichtNullSein(E element)
