@@ -34,6 +34,7 @@ class KlammerAlgorithmus
 		String operand2 = "";
 		String operand1 = "";                   
 		String operator = "";
+		
         while(_stack.top().matches("\\d+"))
         {
         	operand2 = _stack.pop() + operand2; 
@@ -42,6 +43,10 @@ class KlammerAlgorithmus
         while(!_stack.top().equals("("))
         {
         	operand1 = _stack.pop() + operand1;       	
+        }
+        if(!(operand1.matches("-?\\d+") && operand2.matches("-?\\d+") && operator.matches("[\\*\\+-/]")))
+        {
+        	throw new IllegalArgumentException("ungültiger Ausdruck");
         }
         _stack.pop();
         
@@ -62,8 +67,12 @@ class KlammerAlgorithmus
         }
         _stack.push(String.valueOf(_ergebnis));
 		}
-		
-		return String.valueOf(_ergebnis);
+		String ergebnis = _stack.pop();
+		if(!_stack.isEmpty())
+		{
+			throw new IllegalArgumentException("Zu viele Klammern");
+		}
+		return ergebnis;
 	}
 
 	 public static void main(String[] args) throws IOException
