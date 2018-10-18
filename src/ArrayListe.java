@@ -89,16 +89,6 @@ public class ArrayListe<E> implements ListenInter<E>
 		schiebeNachVorneAb(position + 1);
 		--_anzahlElemente;
 		_elementArray[_anzahlElemente] = null;
-
-		// if (position <9) //Für Position 10 wird nur die Titelanzahl dekrementiert
-		// {
-		// for( int i = position; i< _titelArray.length-1; i++)
-		// {
-		// _titelArray[i] = _titelArray[i+1];
-		// }
-		// }
-		// _anzahlTitel--;
-
 	}
 
 	private void schiebeNachVorneAb(int position)
@@ -127,10 +117,6 @@ public class ArrayListe<E> implements ListenInter<E>
 		}
 
 		return false;
-
-		// Alternative Loesung ohne Schleife und Fallunterscheidung:
-		// return java.util.Arrays.asList(_titelArray).subList(0,
-		// _anzahlTitel).contains(titel);
 	}
 
 	/**
