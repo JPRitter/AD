@@ -14,6 +14,9 @@ public class KlammerAlgorithmusTest
 		testObjekt = new KlammerAlgorithmus();
 	}
 
+	/**
+	 * Test für einen nur einmal geklammerten Ausdruck
+	 */
 	@Test
 	public void testAuswertenEinfacherAusdruck()
 	{
