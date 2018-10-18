@@ -100,7 +100,7 @@ public class DoppelKnoten<E>
 	 * @param element
 	 *            Ein Element.
 	 */
-	public void setzeTitel(E element)
+	public void setzeElement(E element)
 	{
 		_element = element;
 	}

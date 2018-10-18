@@ -167,7 +167,7 @@ public class ArrayListe<E> implements ListenInter<E>
 	/**
 	 * Liefert true fuer alle gueltigen Positionen innerhalb der Liste.
 	 */
-	public boolean istGueltigePosition(int position)
+	private boolean istGueltigePosition(int position)
 	{
 		return (position >= 0) && (position < gibLaenge());
 	}
@@ -187,7 +187,7 @@ public class ArrayListe<E> implements ListenInter<E>
 	/**
 	 * Liefert true fuer alle gueltigen Einfuegepositionen innerhalb der Liste.
 	 */
-	public boolean istGueltigeEinfuegeposition(int position)
+	private boolean istGueltigeEinfuegeposition(int position)
 	{
 		return (position >= 0) && (position <= gibLaenge());
 	}

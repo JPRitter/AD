@@ -1,3 +1,8 @@
+/**
+ * @author J.P.Ritter & P.Aguilar Bremer
+ * @version Oktober 2018
+ *
+ */
 public class Main
 {
 	public static void main(String[] args)

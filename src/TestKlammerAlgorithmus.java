@@ -2,14 +2,14 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class KlammerAlgorithmusTest
+public class TestKlammerAlgorithmus
 {
 	KlammerAlgorithmus testObjekt;
 	
 	/**
 	 * Testobjekt für den Klammeralgorithmus
 	 */
-	public KlammerAlgorithmusTest()
+	public TestKlammerAlgorithmus()
 	{
 		testObjekt = new KlammerAlgorithmus();
 	}
