@@ -6,6 +6,9 @@ public class KlammerAlgorithmusTest
 {
 	KlammerAlgorithmus testObjekt;
 	
+	/**
+	 * Testobjekt für den Klammeralgorithmus
+	 */
 	public KlammerAlgorithmusTest()
 	{
 		testObjekt = new KlammerAlgorithmus();
