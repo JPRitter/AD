@@ -3,12 +3,12 @@ import java.util.Random;
 public class PerformanceTest
 {
 
-	private LinkedList<Double> _arrayList;
+	private ArrayListe<Double> _arrayList;
 	private LinkedListe<Double> _linkedList;
 
 	public PerformanceTest()
 	{
-		_arrayList = new LinkedList<Double>();
+		_arrayList = new ArrayListe<Double>();
 		_linkedList = new LinkedListe<Double>();
 	}
 
@@ -77,7 +77,7 @@ public class PerformanceTest
 		System.out.println("Einfuegen am Ende der Arrayliste in Ms:  " +  (mZeit2/10));
 		System.out.println();
 		
-		LinkedList<Double> zufallsListe = new LinkedList<Double>();
+		ArrayListe<Double> zufallsListe = new ArrayListe<Double>();
 		for (int i = 0; i < 10000; i++)
 		{
 			zufallsListe.fuegeEin(Math.random() * 10000, 0);
@@ -224,7 +224,7 @@ public class PerformanceTest
 		System.out.println("Einfuegen am Ende der Linkedliste in Ms:  " +  (mZeit2/10));
 		System.out.println();
 		
-		LinkedList<Double> zufallsListe = new LinkedList<Double>();
+		ArrayListe<Double> zufallsListe = new ArrayListe<Double>();
 		for (int i = 0; i < 10000; i++)
 		{
 			zufallsListe.fuegeEin(Math.random() * 10000, 0);

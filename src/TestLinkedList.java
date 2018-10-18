@@ -8,7 +8,7 @@ public class TestLinkedList
 	@Test
 	public void testFuegeEinAnfang()
 	{
-		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+		ArrayListe<Integer> linkedList = new ArrayListe<Integer>();
 		for (int i = 0; i < 10; i++)
 		{
 			linkedList.fuegeEin(i, 0);
@@ -25,7 +25,7 @@ public class TestLinkedList
 	@Test
 	public void testFuegeEinEnde()
 	{
-		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+		ArrayListe<Integer> linkedList = new ArrayListe<Integer>();
 		for (int i = 0; i < 10; i++)
 		{
 			linkedList.fuegeEin(i, linkedList.gibLaenge());
@@ -42,7 +42,7 @@ public class TestLinkedList
 	@Test
 	public void testeEinfuegenUndEntfernen()
 	{
-		LinkedList<String> linkedList = new LinkedList<String>();
+		ArrayListe<String> linkedList = new ArrayListe<String>();
 		for (int i = 0; i < 10; i++)
 		{
 			linkedList.fuegeEin("" + i, linkedList.gibLaenge());
@@ -61,7 +61,7 @@ public class TestLinkedList
 	@Test
 	public void testeEntferneListenanfang()
 	{
-		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+		ArrayListe<Integer> linkedList = new ArrayListe<Integer>();
 		for (int i = 0; i < 10; i++)
 		{
 			linkedList.fuegeEin(i, linkedList.gibLaenge());
@@ -76,7 +76,7 @@ public class TestLinkedList
 	@Test
 	public void testeEntferneListenEnde()
 	{
-		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+		ArrayListe<Integer> linkedList = new ArrayListe<Integer>();
 		for (int i = 0; i < 10; i++)
 		{
 			linkedList.fuegeEin(i, linkedList.gibLaenge());
@@ -91,7 +91,7 @@ public class TestLinkedList
 	@Test
 	public void testeEnthaelt()
     {
-		LinkedList<String> linkedList = new LinkedList<String>();
+		ArrayListe<String> linkedList = new ArrayListe<String>();
         	for (int i = 0; i < 10; i++)
     		{
     			linkedList.fuegeEin(""+i, linkedList.gibLaenge());

@@ -4,7 +4,7 @@
  * @author P.Aguilar Bremer & J.P.Ritter
  * @version Oktober 2018
  */
-public class LinkedList<E> implements ListenInter<E>
+public class ArrayListe<E> implements ListenInter<E>
 {
 	// In diesem Array sind die Referenzen auf die enthaltenen Titel abgelegt.
 	// Die Laenge des Arrays entspricht der Kapazitaet der Liste und muss daher
@@ -17,7 +17,7 @@ public class LinkedList<E> implements ListenInter<E>
 	/**
 	 * Initialisiert eine neue ArrayListe
 	 */
-	public LinkedList()
+	public ArrayListe()
 	{
 		_elementArray = new Object[10];
 		_anzahlElemente = 0;
