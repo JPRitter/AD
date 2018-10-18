@@ -31,6 +31,9 @@ public class KlammerAlgorithmusTest
 		assertEquals(testObjekt.auswerten("(10/5)"), "2");				
 	}
 	
+	/**
+	 * Test für einen mehrfach geklammerten Ausdruck
+	 */
 	@Test
 	public void testAuswertenKomplexererAusdruck()
 	{
